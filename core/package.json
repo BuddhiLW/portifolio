@@ -1,0 +1,17 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuddhiLW/portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuddhiLW/portifolio/issues"
+  },
+  "homepage": "https://github.com/BuddhiLW/portifolio#readme"
+}
