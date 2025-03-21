@@ -3,13 +3,17 @@
 
 FROM node:23-alpine as builder
 
+# Install git to clone the backend repository
+RUN apk add --no-cache git
+
 ENV NODE_ENV build
 
-WORKDIR /home/node/backend
+WORKDIR /home/node
 
-# Copy backend files directly
-COPY backend/package*.json ./
-COPY backend/ .
+# Clone the backend repository
+RUN git clone https://github.com/BuddhiLW/portifolio-backend.git backend
+
+WORKDIR /home/node/backend
 
 # Install dependencies
 RUN npm install
