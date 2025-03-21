@@ -1,0 +1,20 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "where you can see my work and talk with an LLM (RAG) about it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuddhiLW/portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuddhiLW/portifolio/issues"
+  },
+  "homepage": "https://github.com/BuddhiLW/portifolio#readme"
+}
