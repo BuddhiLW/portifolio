@@ -3,5 +3,5 @@
   "tabWidth": 4,
   "useTabs": true,
   "semi": false,
-  "sindleQuote": false
+  "singleQuote": false
 }

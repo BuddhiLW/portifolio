@@ -9,7 +9,7 @@ USER node
 WORKDIR /home/node/backend
 
 COPY backend/*.json ./
-RUN npm ci
+RUN npm install
 
 WORKDIR /home/node
 COPY --chown=node:node . .
