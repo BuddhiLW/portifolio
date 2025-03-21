@@ -6,15 +6,15 @@ FROM node:23-alpine as builder
 ENV NODE_ENV build
 
 USER node
-WORKDIR /home/node/backend
-
-COPY backend/*.json ./
-RUN npm install
-
 WORKDIR /home/node
+
+# Copy entire project first
 COPY --chown=node:node . .
 
+# Then run install in backend directory
 WORKDIR /home/node/backend
+RUN npm install
+
 RUN npx prisma generate \
     && npm run build \
     && npm prune --omit=dev
