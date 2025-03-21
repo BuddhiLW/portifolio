@@ -3,22 +3,15 @@
 
 FROM node:23-alpine as builder
 
-# Install git for submodule checkout
-RUN apk add --no-cache git
-
 ENV NODE_ENV build
 
-WORKDIR /home/node
-
-# Clone the repository and submodules
-COPY . .
-RUN git submodule update --init --recursive
-
-# Switch to non-root user after git operations
-USER node
-
-# Then run install in backend directory
 WORKDIR /home/node/backend
+
+# Copy backend files directly
+COPY backend/package*.json ./
+COPY backend/ .
+
+# Install dependencies
 RUN npm install
 
 RUN npx prisma generate \
