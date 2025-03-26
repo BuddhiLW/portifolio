@@ -9,6 +9,7 @@ export default interface Projeto {
 	imagens: string[]
 	repositorio: string
 	tecnologias: Tecnologia[]
+	destaque: boolean
 	nivel: Nivel
 	tipo: Tipo
 }
