@@ -3,5 +3,11 @@
   "tabWidth": 4,
   "useTabs": true,
   "semi": false,
-  "singleQuote": false
+  "singleQuote": false,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "importOrderParserPlugins": ["typescript", "classProperties", "decorators-legacy"]
 }
