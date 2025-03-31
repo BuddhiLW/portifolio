@@ -2,7 +2,11 @@
 	"name": "@buddhilw/core",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/index.ts",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run build"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/BuddhiLW/portifolio.git"
