@@ -1,5 +1,9 @@
 # portifolio
 
+<div align="center">
+ <img src="./.gitassets/capa.jpg" width="100%" height="100%">
+</div>
+
 where you can see my work and talk with an LLM (RAG) about it.
 
 ## design
@@ -13,3 +17,4 @@ where you can see my work and talk with an LLM (RAG) about it.
 - Nest
 - supabase
 - n8n
+
